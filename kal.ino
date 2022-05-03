@@ -145,6 +145,8 @@ void loop() {
   Serial.print(roll, 2);
   Serial.print(F(","));
   Serial.print(0, 2);
+  Serial.print(F("#DT:"));
+  Serial.print(dt, 2);
   Serial.print(F("#GYR:"));
   Serial.print(gyroXangle, 2);
   Serial.print(F(","));
