@@ -139,26 +139,19 @@ void loop() {
   if (gyroYangle < -180 || gyroYangle > 180)
     gyroYangle = kalAngleY;
 
-  Serial.print(F("ACC:"));
   Serial.print(pitch, 2);
   Serial.print(F(","));
   Serial.print(roll, 2);
   Serial.print(F(","));
-  Serial.print(0, 2);
-  Serial.print(F("#DT:"));
   Serial.print(dt, 2);
-  Serial.print(F("#GYR:"));
+  Serial.print(F(","));
   Serial.print(gyroXangle, 2);
   Serial.print(F(","));
   Serial.print(gyroYangle, 2);
   Serial.print(F(","));
-  Serial.print(0, 2);
-  Serial.print(F("#FIL:"));
   Serial.print(kalAngleX, 2);
   Serial.print(F(","));
   Serial.print(kalAngleY, 2);
-  Serial.print(F(","));
-  Serial.print(0, 2);
   Serial.println(F(""));
   delay(2);
 }
